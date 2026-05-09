@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { CATEGORIES, CategoryKey, ScoreResult } from "@/lib/timescore";
+import { SubmitToLeaderboard } from "./SubmitToLeaderboard";
 
 interface Props {
   result: ScoreResult;
