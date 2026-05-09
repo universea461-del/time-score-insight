@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 interface Props { onStart: () => void }
 
 export function Landing({ onStart }: Props) {
