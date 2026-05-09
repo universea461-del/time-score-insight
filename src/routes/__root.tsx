@@ -76,6 +76,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Analyze your daily routine in 30 seconds. Get your TimeScore." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "TimeScore — Where Does Your Time Go?" },
+      { name: "twitter:title", content: "TimeScore — Where Does Your Time Go?" },
+      { property: "og:description", content: "Analyze your daily routine in 30 seconds. Get your TimeScore." },
+      { name: "twitter:description", content: "Analyze your daily routine in 30 seconds. Get your TimeScore." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51aa4513-bd6c-4434-9885-5b7b6835245f/id-preview-a55cfe5a--49cdbf1f-585d-493b-aceb-047430c8b221.lovable.app-1778350592389.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51aa4513-bd6c-4434-9885-5b7b6835245f/id-preview-a55cfe5a--49cdbf1f-585d-493b-aceb-047430c8b221.lovable.app-1778350592389.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
