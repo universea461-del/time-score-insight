@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { CATEGORIES, CategoryKey, ScoreResult } from "@/lib/timescore";
+import { SubmitToLeaderboard } from "./SubmitToLeaderboard";
 
 interface Props {
   result: ScoreResult;
@@ -191,6 +192,8 @@ export function Results({ result, hours, resultId, onRestart }: Props) {
           </div>
           <div className="mt-4 text-xs text-muted-foreground break-all opacity-70">{shareUrl}</div>
         </div>
+
+        <SubmitToLeaderboard hours={hours} score={result.score} />
 
         <button onClick={onRestart} className="w-full text-sm text-muted-foreground hover:text-foreground py-4">
           ↻ Run another analysis

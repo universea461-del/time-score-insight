@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 interface Props { onStart: () => void }
 
 export function Landing({ onStart }: Props) {
@@ -23,13 +25,21 @@ export function Landing({ onStart }: Props) {
           Analyze your daily routine in 30 seconds. Get a brutally honest score, profile, and a sharper version of your day.
         </p>
 
-        <button
-          onClick={onStart}
-          className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-mint-magenta text-primary-foreground font-semibold text-lg shadow-glow-magenta transition-transform hover:scale-[1.03] active:scale-[0.98]"
-        >
-          Start Analysis
-          <span className="transition-transform group-hover:translate-x-1">→</span>
-        </button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button
+            onClick={onStart}
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-mint-magenta text-primary-foreground font-semibold text-lg shadow-glow-magenta transition-transform hover:scale-[1.03] active:scale-[0.98]"
+          >
+            Start Analysis
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </button>
+          <Link
+            to="/leaderboard"
+            className="px-6 py-4 rounded-full glass font-medium text-foreground hover:border-primary/40 transition"
+          >
+            🏆 Leaderboard
+          </Link>
+        </div>
 
         <div className="mt-14 flex items-center justify-center gap-8 text-xs text-muted-foreground">
           <Stat n="30s" label="to complete" />
